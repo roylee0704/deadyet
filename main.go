@@ -53,6 +53,7 @@ func (s *Server) poll() {
 		time.Sleep(s.period)
 	}
 }
+
 func (s *Server) isAlive() bool {
 	r, err := http.Head(s.url)
 	if err != nil {
